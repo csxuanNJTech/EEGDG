@@ -3,7 +3,6 @@ import sys
 sys.path.append('/code')
 import numpy as np
 import torch
-import scipy.io
 from torch.autograd import Variable
 import mat73
 

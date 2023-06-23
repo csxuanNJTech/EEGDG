@@ -1,5 +1,4 @@
 from torch.nn import functional as F
-import warnings
 
 
 def update_ema_variables(model, ema_model, alpha, global_step):

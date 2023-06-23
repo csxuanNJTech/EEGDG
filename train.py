@@ -137,7 +137,7 @@ for test_object in [1, 2, 3, 4, 5, 6, 7, 8, 9]:
                 preci = metrics.precision_score(labels_vars.cpu().data.numpy(), y_test_pred,
                                                 average='macro')
                 kappa = metrics.cohen_kappa_score(labels_vars.cpu().data.numpy(), y_test_pred)
-
+                print("unseen:" + str(test_object) + " epoch:" + str(i) + " acc: %.4f " % (acc * 100))
             with open('res/res.txt', 'a') as res:
                 res.writelines("unseen:" + str(test_object) + " epoch:" + str(i) + " acc: %.4f " % (
                         acc * 100) + " recall: %.4f " % (recall * 100) + " f1: %.4f " % (
